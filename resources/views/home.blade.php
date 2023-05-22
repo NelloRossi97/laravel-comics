@@ -4,9 +4,13 @@
     <div class="container py-5 fw-bold fs-3 position-relative d-flex flex-column">
         <span class="mylabel mybg-blue position-absolute px-4 py-1 text-uppercase">Current series</span>
         <div class="row mt-5">
+            @foreach ($comics as $comic)
+                <div class="card">
 
+                </div>
+            @endforeach
         </div>
-        <button class="text-uppercase px-5 py-1 mybg-blue align-self-center fw-bold">Load More</button>
+        <button class="text-uppercase px-5 py-1 mt-5 mybg-blue align-self-center fw-bold">Load More</button>
     </div>
 @endsection
 <style lang="scss" scoped>
