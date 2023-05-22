@@ -26,6 +26,13 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics-list', function () {
+    $data = [
+        'contentCall' => config('db.contentCall'),
+        'comicsArray' => config('db.comicsArray'),
+        'shopArray' => config('db.shopArray'),
+        'dcArray' => config('db.dcArray'),
+        'sitesArray' => config('db.sitesArray')
+    ];
     $title = 'Comics List';
-    return view('comics-list', compact('title'));
+    return view('comics-list', compact('title'), $data);
 })->name('comics-list');
