@@ -213,5 +213,63 @@ return [
                 "Joëlle Jones"
             ],
         ],
+    ],
+    'contentCall' => [
+        [
+            'image' => "buy-comics-digital-comics.png",
+            'text' => "Digital Comics"
+        ],
+        [
+            'image' => "buy-comics-merchandise.png",
+            'text' => "DC Merchandise"
+        ],
+        [
+            'image' => "buy-comics-subscriptions.png",
+            'text' => "Subscription"
+        ],
+        [
+            'image' => "buy-comics-shop-locator.png",
+            'text' => "Comic shop locator"
+        ],
+        [
+            'image' => "buy-dc-power-visa.svg",
+            'text' => "DC power visa"
+        ],
+    ],
+    'comicsArray' => [
+        ['text' => 'Characters'],
+        ['text' => 'Comics'],
+        ['text' => 'Movies'],
+        ['text' => 'TV'],
+        ['text' => 'Games'],
+        ['text' => 'Videos'],
+        ['text' => 'News']
+    ],
+
+    'shopArray' => [
+        ['text' => 'Shop DC'],
+        ['text' => 'Shop DC Collectibles']
+    ],
+
+    'dcArray' => [
+        ['text' => 'Terms Of Use'],
+        ['text' => 'Privacy policy'],
+        ['text' => 'Ad Choices'],
+        ['text' => 'Advertising'],
+        ['text' => 'Jobs'],
+        ['text' => 'Subscriptions'],
+        ['text' => 'Talent Workshops'],
+        ['text' => 'CPSC Certificates'],
+        ['text' => 'Rating'],
+        ['text' => 'Shop Help'],
+        ['text' => 'Contact Us']
+    ],
+
+    'sitesArray' => [
+        ['text' => 'DC'],
+        ['text' => 'MAD Magazine'],
+        ['text' => 'DC Kids'],
+        ['text' => 'DC Universe'],
+        ['text' => 'DC Power Visa']
     ]
 ];

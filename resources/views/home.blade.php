@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    @include('partials.jumbo')
     <div class="container py-5 fw-bold fs-3 position-relative d-flex flex-column">
         <span class="mylabel mybg-blue position-absolute px-4 py-1 text-uppercase">Current series</span>
         <div class="row mt-5">
