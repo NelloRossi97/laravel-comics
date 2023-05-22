@@ -11,7 +11,10 @@
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                     </div>
                     <div class="card-body">
-                        {{ $comic['title'] }}
+                        <a href="{{ route('comics.show', ['id' => $loop->index]) }}">
+                            {{ $comic['title'] }}
+                        </a>
+
                     </div>
                 </div>
             @endforeach
@@ -44,6 +47,10 @@
     .card-top-img img {
         width: 100%;
         height: 100%;
+    }
+
+    .card-body a {
+        color: white;
     }
 
     button {
