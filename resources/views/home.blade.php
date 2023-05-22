@@ -3,10 +3,15 @@
 @section('content')
     <div class="container py-5 fw-bold fs-3 position-relative d-flex flex-column">
         <span class="mylabel mybg-blue position-absolute px-4 py-1 text-uppercase">Current series</span>
-        <div class="row mt-5 text-black">
+        <div class="row mt-5">
             @foreach ($comics as $comic)
-                <div class="card">
-                    {{ $comic['title'] }}
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mycard mb-5 rounded-4 py-3">
+                    <div class="card-top-img">
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    </div>
+                    <div class="card-body">
+                        {{ $comic['title'] }}
+                    </div>
                 </div>
             @endforeach
         </div>
@@ -20,7 +25,25 @@
         background-color: #0069cc;
     }
 
-    .mybg-blue {}
+    .mycard {
+        width: 300px;
+        height: fit-content;
+        transition: 0.8s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: grey;
+        }
+    }
+
+    .card-top-img {
+        height: 80%;
+    }
+
+    .card-top-img img {
+        width: 100%;
+        height: 100%;
+    }
 
     button {
         background-color: #0069cc;
