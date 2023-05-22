@@ -11,3 +11,41 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap%27');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+header {
+    height: 100px;
+
+    nav {
+        height: 100%;
+
+        img {
+            height: 70%;
+        }
+    }
+}
+
+main {
+    background-color: $bg-main;
+    color: white;
+}
+
+section {
+    background-color: $blue-secondary;
+}
+
+footer {
+    color: white;
+    background-image: url(/images/footer-bg.jpg);
+    background-size: cover;
+
+    .contacts {
+        background-color: $bg-contacts;
+    }
+}
